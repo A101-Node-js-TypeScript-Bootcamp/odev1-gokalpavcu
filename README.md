@@ -111,9 +111,9 @@ Fakat şöyle bir sorun var; localhost:3000 içinde kalmak şartıyla hangi adre
 3
 4
 app.get('/kategoriler', (req, res) => {
-    res.send('<h3>Kategoriler Sayfasına Hoşgeldiniz</h3>');
+   /* res.send('<h1>Kategoriler Sayfasına Hoşgeldiniz</h1>');
     res.end();
-});
+}); */
 
 kodunu ekleyerek kategoriler sayfasi içinde ayrıca bi router oluşturmamız gerekiyor. res.send() fonksiyonu içerisine illa ki metin yazmak zorunda değiliz, HTML kodu da ekleyebilirsiniz.Fakat bu routeri sunucuyu başlatmadan öncesine eklememiz gerekiyor. Çünkü sunucu başlatıldıktan sonraki routerler geçersiz olur ve çalışmaz.Router sayısını istediğiniz kadar arttırabilirsiniz; 100 tane sayfanız varsa 100 tane router yazabilirsiniz.
 Evet NodeJS ile ExpressJS kullanarak server oluşturma işlemimiz tamamlandı ve artık sunucumuz başarıyla çalışıyor.
