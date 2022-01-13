@@ -105,6 +105,7 @@ Ben sunucunun çalıştığını görebilmek amacıyla kullandım.Şimdi sırada
 node index.js
 komutunu giriyoruz. Bu komut sayesinde projemizi çalıştırıyoruz. Evet artık sunucumuz sorunsuz bir şekilde çalışıyor olacaktır. localhost:3000 adresine gittiğimizde ekranda Hello World ! yazdığını göreceksiniz.
 Fakat şöyle bir sorun var; localhost:3000 içinde kalmak şartıyla hangi adrese giderseniz gidin karşınıza Hello World ! yazısı çıkacaktır. Çünkü biz sadece / ile başlayan adresleri kontrol ettik ve yönlendirdik. Örneğin localhost:3000/kategoriler adresi için de ayrıca bi yönlendirme yapmak istersek;
+
 1
 2
 3
@@ -113,5 +114,6 @@ app.get('/kategoriler', (req, res) => {
     res.send('<h1>Kategoriler Sayfasına Hoşgeldiniz</h1>');
     res.end();
 });
+
 kodunu ekleyerek kategoriler sayfasi içinde ayrıca bi router oluşturmamız gerekiyor. res.send() fonksiyonu içerisine illa ki metin yazmak zorunda değiliz, HTML kodu da ekleyebilirsiniz.Fakat bu routeri sunucuyu başlatmadan öncesine eklememiz gerekiyor. Çünkü sunucu başlatıldıktan sonraki routerler geçersiz olur ve çalışmaz.Router sayısını istediğiniz kadar arttırabilirsiniz; 100 tane sayfanız varsa 100 tane router yazabilirsiniz.
 Evet NodeJS ile ExpressJS kullanarak server oluşturma işlemimiz tamamlandı ve artık sunucumuz başarıyla çalışıyor.
