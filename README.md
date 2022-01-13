@@ -27,7 +27,7 @@ JavaScript’te büyük bir geliştirici topluluğu var, ancak TypeScript yok.
 Airbnb, Codecademy ve Instagram JavaScript kullanmasına rağmen, Asana, Clever, Screen award, vb. TypeScript kullanıyor.
 JavaScript küçük çaplı projelerde, dinamik web sayfalarında kullanıma yönelik iken TypeScript büyük çaplı projelere yöneliktir.
 
-----------------------Node.js ile sunucuyu ayağa kaldırma-----------------------------------------------------------------------------------------------
+----------------------Node.js ile sunucuyu ayağa kaldırma-----------------------------------------------------------
 
 
 
