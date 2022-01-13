@@ -111,7 +111,7 @@ Fakat şöyle bir sorun var; localhost:3000 içinde kalmak şartıyla hangi adre
 3
 4
 app.get('/kategoriler', (req, res) => {
-    res.send('<h1>Kategoriler Sayfasına Hoşgeldiniz</h1>');
+    res.send('<h1>Kategoriler Sayfasına Hoşgeldiniz<h1>');
     res.end();
 });
 
